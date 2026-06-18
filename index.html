@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acad Alfa - Sua academia, sua evolução</title>
+  <meta name="description" content="Acad Alfa: academia com musculação, cross training, funcional e cardio. Conheça nossos planos." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação responsivo -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">ACAD<span>ALFA</span></a>
+
+      <!-- Botão hambúrguer para mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="login.html" class="nav-cta">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="hero" id="inicio">
+        <div class="container hero-content">
+             <h1>Supere seus limites na <span class="accent">Acad Alfa</span></h1>
+            <p>Treinos personalizados, estrutura de ponta e uma comunidade que te empurra para evoluir todos os dias.</p>
+         <a href="#planos" class="btn btn-primary">Conheça nossos Planos</a>
+    </div>
+  </section>
+
+  <!-- Seção de Planos -->
+        <section class="section" id="planos">
+     <div class="container">
+              <h2 class="section-title">Nossos Planos</h2>
+      <p class="section-subtitle">Escolha o plano ideal para o seu objetivo.</p>
+
+      <div class="planos-grid">
+               <article class="plano">
+          <h3>Básico</h3>
+          <p class="preco">R$ 89<span>/mês</span></p>
+                <ul>
+                <li>Acesso à musculação</li>
+               <li>Horário comercial</li>
+                <li>Avaliação inicial</li>
+                <li>personal da virginia</li>
+           </ul>
+                <button class="btn btn-outline btn-plano" data-plano="Básico">Selecionar Plano</button>
+        </article>
+
+        <article class="plano destaque">
+           <span class="badge">Mais escolhido</span>
+                  <h3>Intermediário</h3>
+                 <p class="preco">R$ 129<span>/mês</span></p>
+                 <ul>
+                  <li>Musculação + Cardio</li>
+                <li>Acesso livre</li>
+               <li>Aulas coletivas</li>
+               <li>Plano de treino mensal</li>
+               <li>Desconto no pó branco apenas</li>
+            </ul>
+          <button class="btn btn-primary btn-plano" data-plano="Intermediário">Selecionar Plano</button>
+        </article>
+
+        <article class="plano">
+          <h3>Premium</h3>
+          <p class="preco">R$ 189<span>/mês</span></p>
+          <ul>
+            <li>Acesso total 24h</li>
+            <li>Todas as modalidades</li>
+            <li>Personal trainer 2x/sem</li>
+            <li>Acompanhamento nutricional</li>
+            <li>Descontos no pó e na bomba</li>
+          </ul>
+          <button class="btn btn-outline btn-plano" data-plano="Premium">Selecionar Plano</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Modalidades -->
+  <section class="section section-alt" id="modalidades">
+    <div class="container">
+      <h2 class="section-title">Modalidades</h2>
+      <p class="section-subtitle">Treine do seu jeito, com o que mais combina com você.</p>
+
+      <div class="modalidades-grid">
+        <div class="modalidade">
+          <div class="icone">🏋️</div>
+          <h3>Musculação</h3>
+          <p>Equipamentos modernos e treinos individualizados para ganho de força e hipertrofia.</p>
+        </div>
+        <div class="modalidade">
+          <div class="icone">🔥</div>
+          <h3>Bomba de cavalo</h3>
+          <p>Aqui você fica um cavalão</p>
+        </div>
+        <div class="modalidade">
+          <div class="icone">🤸</div>
+          <h3>Funcional</h3>
+          <p>Movimentos naturais para melhorar mobilidade, equilíbrio e desempenho no dia a dia.</p>
+        </div>
+        <div class="modalidade">
+          <div class="icone">🏃</div>
+          <h3>Cardio</h3>
+          <p>Esteiras, bikes e elípticos para queima de calorias e saúde cardiovascular.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section class="section" id="contato">
+    <div class="container contato-wrapper">
+      <div>
+        <h2 class="section-title left">Fale com a gente</h2>
+        <p class="section-subtitle left">Deixe seus dados e nossa equipe entrará em contato.</p>
+
+        <form id="formContato" class="form" novalidate>
+                 <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+            <small class="erro" data-erro="nome"></small>
+          </div>
+
+          <div class="form-group">
+                   <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" />
+            <small class="erro" data-erro="email"></small>
+          </div>
+
+          <div class="form-group">
+                 <label for="telefone">Telefone</label>
+                   <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            <small class="erro" data-erro="telefone"></small>
+          </div>
+
+            <div class="form-group">
+            <label for="objetivo">Objetivo</label>
+                  <select id="objetivo" name="objetivo">
+                 <option value="">Selecione um objetivo</option>
+                <option>Emagrecimento</option>
+                  <option>Hipertrofia</option>
+                  <option>Condicionamento</option>
+                  <option>Saúde e bem-estar</option>
+            </select>
+            <small class="erro" data-erro="objetivo"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <p id="mensagemSucesso" class="sucesso" hidden>✅ Cadastro realizado com sucesso!</p>
+        </form>
+      </div>
+
+      <!-- Lista dinâmica de interessados -->
+      <aside class="lista-card">
+         <div class="lista-header">
+              <h3>Interessados</h3>
+             <span class="contador" id="contador">0</span>
+        </div>
+
+        <input
+                   type="text"
+                   id="pesquisa"
+                  class="pesquisa"
+                placeholder="🔍 Pesquisar por nome..."
+        />
+
+        <ul id="listaAlunos" class="lista-alunos">
+          <li class="vazio">Nenhum aluno cadastrado ainda.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p><span id="ano"></span> Acad Alfa. na minha maquina funcionou só pra você não esquecer, vendemos bomba de cavalo também</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

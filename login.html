@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Acad Alfa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-body">
+  <main class="login-wrapper">
+    <div class="login-card">
+      <a href="index.html" class="logo logo-center">ACAD<span>ALFA</span></a>
+      <h1>Acesse sua conta</h1>
+      <p class="login-sub">Bem-vindo de volta! Entre para continuar.</p>
+
+      <form id="formLogin" class="form" novalidate>
+        <div class="form-group">
+          <label for="usuario">Usuário ou e-mail</label>
+          <input type="text" id="usuario" name="usuario" placeholder="seu@email.com" />
+          <small class="erro" data-erro="usuario"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="••••••••" />
+          <small class="erro" data-erro="senha"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary full">Entrar</button>
+        <p id="loginMsg" class="sucesso" hidden></p>
+      </form>
+
+      <a href="index.html" class="btn btn-outline full mt">Voltar para o Início</a>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
