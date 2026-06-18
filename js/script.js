@@ -1,14 +1,3 @@
-/* =========================================================
-   Acad Alfa - JavaScript principal
-   Funcionalidades:
-   - Menu mobile (toggle)
-   - Validação e envio do formulário de contato
-   - Cadastro dinâmico de interessados
-   - Pesquisa em tempo real
-   - Contador de alunos
-   - Botões de planos
-   - Validação do formulário de login
-   ========================================================= */
 
 // Aguarda o carregamento completo do DOM
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,8 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   inicializarPesquisa();
   inicializarLogin();
 });
-
-/* ----------- Utilitários ----------- */
 
 // Atualiza o ano dinâmico no rodapé
 function inicializarAno() {
