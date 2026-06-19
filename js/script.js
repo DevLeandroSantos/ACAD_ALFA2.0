@@ -1,4 +1,3 @@
-// Aguarda o carregamento completo do DOM
 document.addEventListener('DOMContentLoaded', () => {
   inicializarAno();
   inicializarMenuMobile();
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   inicializarLogin();
 });
 
-// Atualiza o ano dinâmico no rodapé
+
 function inicializarAno() {
   const ano = document.getElementById('ano');
   if (ano) ano.textContent = new Date().getFullYear();
@@ -33,7 +32,7 @@ function limparErros(form) {
   form.querySelectorAll('.invalido').forEach((el) => el.classList.remove('invalido'));
 }
 
-/* ----------- Menu mobile ----------- */
+
 function inicializarMenuMobile() {
   const toggle = document.getElementById('menuToggle');
   const nav = document.getElementById('mainNav');
@@ -47,7 +46,7 @@ function inicializarMenuMobile() {
   });
 }
 
-/* ----------- Seleção de planos ----------- */
+
 function inicializarPlanos() {
   const botoes = document.querySelectorAll('.btn-plano');
   botoes.forEach((btn) => {
@@ -60,7 +59,7 @@ function inicializarPlanos() {
   });
 }
 
-/* ----------- Formulário de Contato + Cadastro Dinâmico ----------- */
+
 
 // Lista de alunos cadastrados em memória
 let alunos = [];
@@ -163,7 +162,7 @@ function renderizarAlunos(filtro = '') {
   });
 }
 
-/* ----------- Pesquisa em tempo real ----------- */
+
 function inicializarPesquisa() {
   const input = document.getElementById('pesquisa');
   if (!input) return;
@@ -171,7 +170,7 @@ function inicializarPesquisa() {
   input.addEventListener('input', (e) => renderizarAlunos(e.target.value));
 }
 
-/* ----------- Formulário de Login ----------- */
+
 function inicializarLogin() {
   const form = document.getElementById('formLogin');
   if (!form) return;
